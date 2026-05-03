@@ -1,96 +1,93 @@
-# CUSTOMER_BEHAVIOR_ANALYSIS
-📌 Project Overview  This project focuses on analyzing customer shopping behavior using transactional data from 3,900 purchases across multiple product categories. The objective is to uncover actionable insights into spending patterns, customer segmentation, product preferences, and subscription behavior to support data-driven business decisions.
-📌 Project Overview
+# 📊 Customer Shopping Behavior Analysis  
 
-This project analyzes customer shopping behavior using transactional data from 3,900 purchases across various product categories.
+## 📌 Project Overview  
+This project analyzes customer shopping behavior using transactional data from **3,900 purchases** across multiple product categories.  
 
-The goal is to uncover insights into:
+The objective is to uncover insights into:  
+- Customer spending patterns  
+- Product preferences  
+- Subscription behavior  
+- Customer segmentation  
 
-Customer spending patterns
-Product preferences
-Subscription behavior
-Customer segmentation
+These insights help in making **data-driven business decisions**.
 
-These insights help drive data-informed business decisions.
-Dataset Summary
-Feature Type	Details
-Rows	3,900
-Columns	18
-Missing Values	37 (Review Rating)
-🔑 Key Attributes
-Demographics: Age, Gender, Location, Subscription Status
-Purchase Info: Item, Category, Amount, Season, Size, Color
-Behavior: Discount, Promo Code, Purchase Frequency, Rating, Shipping
-Data Processing (Python)
+---
 
-Key steps performed using Pandas:
+## 📂 Dataset Summary  
 
-📥 Data loading and inspection (.info(), .describe())
-🧹 Missing value treatment (median imputation by category)
-🔤 Column standardization (snake_case naming)
-⚙️ Feature engineering:
-age_group
-purchase_frequency_days
-🔍 Data validation and redundancy removal
-🗄️ Exported cleaned dataset to PostgreSQL
-SQL Analysis (PostgreSQL)
+- **Total Rows:** 3,900  
+- **Total Columns:** 18  
+- **Missing Values:** 37 (Review Rating column)  
 
-Solved key business problems:
+### 🔑 Key Features  
+- **Customer Demographics:** Age, Gender, Location, Subscription Status  
+- **Purchase Details:** Item Purchased, Category, Purchase Amount, Season, Size, Color  
+- **Shopping Behavior:** Discount Applied, Promo Code Used, Previous Purchases, Frequency, Review Rating, Shipping Type  
 
-💰 Revenue comparison by gender
-🎯 High-spending customers using discounts
-⭐ Top-rated products
-🚚 Shipping type vs purchase behavior
-👥 Subscriber vs non-subscriber analysis
-📉 Discount dependency of products
-🔄 Customer segmentation (New / Returning / Loyal)
-🏆 Top products per category
-🔁 Repeat buyers vs subscription trends
-👶 Revenue by age groups
-Power BI Dashboard
+---
 
-Interactive dashboard includes:
+## 🐍 Data Processing (Python)  
 
-📌 Customer segmentation insights
-📌 Revenue distribution
-📌 Product performance
-📌 Discount impact
-📌 Subscription behavior
-<img width="1468" height="845" alt="image" src="https://github.com/user-attachments/assets/e0b089e5-f7c1-4fe6-af67-74bdd89c72ab" />
+- Loaded dataset using **pandas**  
+- Performed data exploration using `.info()` and `.describe()`  
+- Handled missing values using **median imputation (category-wise)**  
+- Standardized column names to **snake_case**  
+- Created new features:  
+  - `age_group`  
+  - `purchase_frequency_days`  
+- Removed redundant columns  
+- Loaded cleaned dataset into **PostgreSQL**  
 
-Business Insights
-🚀 Promote subscriptions with exclusive benefits
-🎯 Build loyalty programs for repeat customers
-⚖️ Optimize discount strategies
-🛍️ Highlight best-selling & top-rated products
-📈 Target high-value customer segments
+---
 
-🧰 Tech Stack
-Python – Data cleaning & preprocessing
-PostgreSQL – Data analysis
-Power BI – Visualization & dashboard
+## 🗄️ SQL Analysis (PostgreSQL)  
 
-Customer-Shopping-Analysis/
-│
-├── data/
-│   ├── raw_data.csv
-│   └── cleaned_data.csv
-│
-├── notebooks/
-│   └── data_cleaning.ipynb
-│
-├── sql/
-│   └── analysis_queries.sql
-│
-├── powerbi/
-│   └── dashboard.pbix
-│
-├── images/
-│   └── dashboard.png
-│
-└── README.md
+Key business questions answered:
 
-Author
+1. Revenue by gender  
+2. High-spending customers using discounts  
+3. Top 5 products by rating  
+4. Shipping type vs purchase behavior  
+5. Subscriber vs non-subscriber analysis  
+6. Discount-dependent products  
+7. Customer segmentation (New / Returning / Loyal)  
+8. Top products per category  
+9. Repeat buyers vs subscription trends  
+10. Revenue by age group  
 
-Jatin Bangali
-📧 Contact: +91-8965034893
+---
+
+## 📊 Power BI Dashboard  
+
+The interactive dashboard provides:
+
+- 📌 Number of Customers: **3.9K**  
+- 📌 Average Purchase Amount: **$59.76**  
+- 📌 Average Rating: **3.75**  
+
+### Visual Insights:
+- Subscription distribution (27% Yes, 73% No)  
+- Revenue & Sales by Category  
+- Revenue & Sales by Age Group  
+- Filters for Gender, Category, Shipping Type  
+
+---
+
+## 💡 Business Recommendations  
+
+- 🚀 Promote subscriptions with exclusive benefits  
+- 🎯 Build loyalty programs for repeat customers  
+- ⚖️ Optimize discount strategies  
+- 🛍️ Highlight best-selling & top-rated products  
+- 📈 Target high-value customer segments  
+
+---
+
+## 🧰 Tech Stack  
+
+- **Python (Pandas, NumPy)** – Data Cleaning  
+- **PostgreSQL** – Data Analysis  
+- **Power BI** – Dashboard & Visualization  
+
+<img width="1455" height="796" alt="image" src="https://github.com/user-attachments/assets/d300af99-1776-40a9-bebc-4b2aff4ca55c" />
+
